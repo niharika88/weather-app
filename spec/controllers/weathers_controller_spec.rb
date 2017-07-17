@@ -8,7 +8,7 @@ describe "GET #index" do
       expect(response).to be_success
       expect(response).to have_http_status(200)
     end
-  it "responds with response as nil if url not reachable" do
+  it "checks the template being rendered" do
 		 get :index 
       assert_template("weathers/index", "layouts/application")
    end
