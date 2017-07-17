@@ -1,24 +1,38 @@
-# README
+README
+========
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application gives info about weather of a city.
+Language: Ruby
 
-Things you may want to cover:
 
-* Ruby version
+Database: Sqlite
 
-* System dependencies
 
-* Configuration
+```
 
-* Database creation
+Steps for running app:
+======================
 
-* Database initialization
+Clone repo
 
-* How to run the test suite
+cd weather-app
 
-* Services (job queues, cache servers, search engines, etc.)
+bundle install
 
-* Deployment instructions
+rake db:migrate
 
-* ...
+rails s
+
+server will run on localhost/3000
+
+test cases:
+
+bundle exec rspec
+
+```
+
+Future Changes
+===============
+
+Will include google maps to mark a place and get the weather data .
+
