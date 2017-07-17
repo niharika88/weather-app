@@ -1,0 +1,17 @@
+<%= form_with(model: weather, local: true) do |form| %>
+  
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city, id: :weather_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country, id: :weather_country %>
+  </div>
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
